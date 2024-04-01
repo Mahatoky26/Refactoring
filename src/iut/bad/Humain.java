@@ -6,8 +6,16 @@ public class Humain {
     private String prenom;
     private int age;
 
+    public Humain() {}
     
-    @Override
+    public Humain(String nom, String prenom, int age) {
+		this.nom = nom;
+		this.prenom = prenom;
+		this.age = age;
+	}
+
+
+	@Override
     public String toString() {
         return "Nom: " + nom + "\nPrénom: " + prenom + "\nÂge: " + age;
     }
